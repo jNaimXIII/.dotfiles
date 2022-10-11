@@ -21,18 +21,17 @@ function plugin-load {
 }
 
 plugins=(
-	softmoth/zsh-vim-mode
 	olets/zsh-abbr
 
-	zsh-users/zsh-autosuggestions
-	zdharma-continuum/fast-syntax-highlighting
-
 	romkatv/zsh-defer
-
+  jeffreytse/zsh-vi-mode
+	Aloxaf/gencomp
 	peterhurford/up.zsh
 	zsh-users/zsh-history-substring-search
 	rummik/zsh-tailf
-	Aloxaf/gencomp
+	zsh-users/zsh-autosuggestions
+	zdharma-continuum/fast-syntax-highlighting
+	olets/zsh-abbr
 )
 
 plugin-load $plugins
