@@ -1,0 +1,8 @@
+[user]
+	name = Jannatin Naim
+	email = soup@jannatinnaim.com
+	signingkey = D2A3640E0D594380
+[commit]
+	gpgsign = true
+[core]
+	editor = nvim
