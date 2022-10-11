@@ -1,5 +1,7 @@
 BASE_DIR=$HOME/.config/zsh
 
+source $BASE_DIR/shell/path.zsh
+
 for script in $BASE_DIR/install/**/*.zsh; do source $script; done
 
 source $BASE_DIR/prompt/instant.zsh
