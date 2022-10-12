@@ -18,9 +18,8 @@
 ## Install
 
 - Clone the repository.
-- `cd scripts` - Go to scripts directory.
-- `chmod +x <OS.install.sh>` - Make OS install file executable.
-- `./OS.install.sh` - Install dotfiles.
+- `chmod +x ./scripts/<OS.install.sh>` - Make OS install file executable.
+- `./scripts/OS.install.sh` - Install dotfiles.
 
 > WARNING: This will wipe all previous configurations. Proceed with caution.
 
