@@ -1,5 +1,6 @@
 abbr g="git"
 abbr gi="git init"
+abbr gs="git status"
 abbr ga="git add"
 abbr gal="git add ."
 abbr gc="git commit"
