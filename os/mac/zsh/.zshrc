@@ -37,7 +37,10 @@ source $DOTFILES_ZSH_MAC/config/plugins/powerlevel10k/.p10k.zsh
 source $DOTFILES_ZSH_MAC/config/aliases/shell.zsh
 source $DOTFILES_ZSH_MAC/config/aliases/exa.zsh
 
+# GOOGLE CLOUD CLI
+. "/Users/jannatinnaim/.gcloud/google-cloud-sdk/path.zsh.inc"
+. "/Users/jannatinnaim/.gcloud/google-cloud-sdk/completion.zsh.inc"
+
 # COMPLETIONS
 autoload -Uz compinit
 compinit
-

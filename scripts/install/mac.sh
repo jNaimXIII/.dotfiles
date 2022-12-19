@@ -16,3 +16,8 @@ brew install asdf zoxide exa
 
 # ANTIDOTE INSTALLATION
 git clone --depth=1 https://github.com/mattmc3/antidote.git $HOME/.local/.antidote
+
+# GCLOUD CLI INSTALLATION
+curl https://sdk.cloud.google.com > /tmp/gcloud-install.sh
+. /tmp/gcloud-install.sh --install-dir="$HOME/.gcloud"
+rm -rf /tmp/gcloud-install.sh
