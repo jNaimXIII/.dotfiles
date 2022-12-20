@@ -12,7 +12,7 @@ ln -sf "$MAC_DOTFILES/zsh/.zprofile" "$HOME"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # BREW PACKAGES
-brew install asdf zoxide exa tmux iterm2 visual-studio-code
+brew install asdf zoxide exa tmux iterm2 visual-studio-code karabiner-elements
 
 # ANTIDOTE INSTALLATION
 git clone --depth=1 https://github.com/mattmc3/antidote.git $HOME/.local/.antidote
@@ -33,3 +33,6 @@ ln -sf "$MAC_DOTFILES/vscode/settings.json" "$HOME/Library/Application Support/C
 ln -sf "$MAC_DOTFILES/vscode/keybindings.json" "$HOME/Library/Application Support/Code/User"
 ln -sf "$MAC_DOTFILES/vscode/extensions.json" "$HOME/.vscode/extensions"
 ln -sf "$MAC_DOTFILES/vscode/snippets" "$HOME/Library/Application Support/Code/User"
+
+# LINK KARABINER ELEMENTS CONFIG FILES
+ln -sf "$MAC_DOTFILES/karabiner" "$HOME/.config"
