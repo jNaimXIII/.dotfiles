@@ -8,6 +8,7 @@ DOTFILES_ZSH_MAC=$DOTFILES/os/mac/zsh
 
 # PATH
 source $DOTFILES_ZSH_MAC/config/path/general.zsh
+source $DOTFILES_ZSH_MAC/config/path/pnpm.zsh
 
 # ZSH CONFIG
 source $DOTFILES_ZSH_MAC/config/apps/zsh.zsh
