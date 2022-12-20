@@ -1,0 +1,85 @@
+{
+  // EDITOR STYLE
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "fluent-icons",
+  "editor.fontFamily": "JetBrainsMono Nerd Font, monospace",
+  "editor.fontSize": 18,
+  "debug.console.fontSize": 18,
+  "terminal.integrated.fontSize": 18,
+  "editor.cursorBlinking": "solid",
+  "editor.lineHeight": 1.25,
+  "editor.rulers": [80, 120],
+  "editor.minimap.enabled": false,
+  "workbench.colorCustomizations": {
+    "[One Dark Pro]": {
+      "sideBar.border": "#242424"
+    }
+  },
+  "workbench.startupEditor": "none",
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.tips.enabled": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.activityBar.visible": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "window.dialogStyle": "custom",
+  // AUTO FORMAT
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  // CODE STYLE
+  "files.insertFinalNewline": true,
+  "files.simpleDialog.enable": true,
+  "files.trimFinalNewlines": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[svelte]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  // EDITOR EXPERIENCE
+  "editor.cursorSurroundingLines": 8,
+  "workbench.settings.editor": "json",
+  "terminal.integrated.enablePersistentSessions": false,
+  "telemetry.telemetryLevel": "off",
+  // PLUGIN CONFIG
+  "oneDarkPro.bold": true,
+  "oneDarkPro.editorTheme": "Shadow",
+  "oneDarkPro.italic": false,
+  "oneDarkPro.markdownStyle": false,
+  "oneDarkPro.vivid": true,
+  "go.toolsManagement.autoUpdate": true,
+  "nxConsole.enableTelemetry": false,
+  "svelte.enable-ts-plugin": true,
+  "svelte.plugin.svelte.note-new-transformation": false,
+  "better-comments.tags": [
+    { "tag": "!", "color": "#FF2D00" },
+    { "tag": "?", "color": "#3498DB" },
+    { "tag": "*", "color": "#12f446" },
+    { "tag": "todo", "color": "#FF8C00" },
+    { "tag": "note", "color": "#F38Ca0" }
+  ]
+  // UN-CATEGORIZED
+}

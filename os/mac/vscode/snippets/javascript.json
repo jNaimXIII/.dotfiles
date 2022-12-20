@@ -1,0 +1,6 @@
+{
+  "console.log": {
+    "prefix": "lg",
+    "body": ["console.log({$0});"]
+  }
+}
