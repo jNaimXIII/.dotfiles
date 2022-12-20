@@ -12,7 +12,7 @@ ln -sf "$MAC_DOTFILES/zsh/.zprofile" "$HOME"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # BREW PACKAGES
-brew install asdf zoxide exa tmux
+brew install asdf zoxide exa tmux iterm2
 
 # ANTIDOTE INSTALLATION
 git clone --depth=1 https://github.com/mattmc3/antidote.git $HOME/.local/.antidote
