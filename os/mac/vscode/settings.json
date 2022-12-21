@@ -10,17 +10,15 @@
   "editor.cursorBlinking": "solid",
   "editor.lineHeight": 1.25,
   "editor.rulers": [80, 120],
-  "editor.minimap.enabled": false,
   "workbench.colorCustomizations": {
     "[One Dark Pro]": {
-      "sideBar.border": "#242424"
+      "sideBar.border": "#333333"
     }
   },
   "workbench.startupEditor": "none",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.tips.enabled": false,
   "workbench.layoutControl.enabled": false,
-  "workbench.activityBar.visible": false,
   "workbench.editor.highlightModifiedTabs": true,
   "window.dialogStyle": "custom",
   // AUTO FORMAT
@@ -64,6 +62,7 @@
   "workbench.settings.editor": "json",
   "terminal.integrated.enablePersistentSessions": false,
   "telemetry.telemetryLevel": "off",
+  "terminal.external.osxExec": "iTerm.app",
   // PLUGIN CONFIG
   "oneDarkPro.bold": true,
   "oneDarkPro.editorTheme": "Shadow",
@@ -80,6 +79,14 @@
     { "tag": "*", "color": "#12f446" },
     { "tag": "todo", "color": "#FF8C00" },
     { "tag": "note", "color": "#F38Ca0" }
-  ]
-  // UN-CATEGORIZED
+  ],
+  "editor.inlineSuggest.enabled": true,
+  "discord.enabled": false,
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.gutterIconSet": "defaultOutline",
+  "errorLens.gutterIconSize": "150%",
+  // UI-TOGGLE
+  "errorLens.messageBackgroundMode": "none",
+  "editor.minimap.enabled": false,
+  "workbench.activityBar.visible": false
 }
