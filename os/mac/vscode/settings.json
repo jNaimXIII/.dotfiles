@@ -10,9 +10,11 @@
   "editor.cursorBlinking": "solid",
   "editor.lineHeight": 1.25,
   "editor.rulers": [80, 120],
+  "editor.minimap.renderCharacters": false,
   "workbench.colorCustomizations": {
     "[One Dark Pro]": {
       "sideBar.border": "#333333"
+      // "tree.indentGuidesStroke": "#aaaaaa"
     }
   },
   "workbench.startupEditor": "none",
@@ -20,6 +22,8 @@
   "workbench.tips.enabled": false,
   "workbench.layoutControl.enabled": false,
   "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.labelFormat": "short",
+  "explorer.compactFolders": false,
   "window.dialogStyle": "custom",
   // AUTO FORMAT
   "editor.formatOnPaste": true,
@@ -29,10 +33,6 @@
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
   "files.trimFinalNewlines": true,
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
@@ -57,10 +57,29 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   // EDITOR EXPERIENCE
+  "editor.inlineSuggest.enabled": true,
   "editor.cursorSurroundingLines": 8,
   "workbench.settings.editor": "json",
-  "terminal.integrated.enablePersistentSessions": false,
   "telemetry.telemetryLevel": "off",
   "terminal.external.osxExec": "iTerm.app",
   // PLUGIN CONFIG
@@ -80,13 +99,17 @@
     { "tag": "todo", "color": "#FF8C00" },
     { "tag": "note", "color": "#F38Ca0" }
   ],
-  "editor.inlineSuggest.enabled": true,
   "discord.enabled": false,
   "errorLens.gutterIconsEnabled": true,
   "errorLens.gutterIconSet": "defaultOutline",
   "errorLens.gutterIconSize": "150%",
-  // UI-TOGGLE
   "errorLens.messageBackgroundMode": "none",
+  // MISC
+  "cSpell.userWords": ["Heyo", "Jannatin", "jannatinnaim", "Naim"],
   "editor.minimap.enabled": false,
-  "workbench.activityBar.visible": false
+  "redhat.telemetry.enabled": false,
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "editor.linkedEditing": true
 }

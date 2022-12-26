@@ -36,3 +36,6 @@ ln -sf "$MAC_DOTFILES/vscode/snippets" "$HOME/Library/Application Support/Code/U
 
 # LINK KARABINER ELEMENTS CONFIG FILES
 ln -sf "$MAC_DOTFILES/karabiner" "$HOME/.config"
+
+# LINK IDEA EDITOR CONFIG FILES
+ln -sf "$MAC_DOTFILES/idea/.ideavimrc" "$HOME"
