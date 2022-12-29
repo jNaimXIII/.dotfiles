@@ -25,6 +25,7 @@
   "workbench.editor.labelFormat": "short",
   "explorer.compactFolders": false,
   "window.dialogStyle": "custom",
+  "terminal.integrated.enablePersistentSessions": false,
   // AUTO FORMAT
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -111,5 +112,6 @@
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "editor.linkedEditing": true
+  "editor.linkedEditing": true,
+  "workbench.activityBar.visible": false
 }
