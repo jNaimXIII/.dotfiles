@@ -4,9 +4,9 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
   "editor.fontFamily": "JetBrainsMono Nerd Font, monospace",
-  "editor.fontSize": 19,
-  "debug.console.fontSize": 19,
-  "terminal.integrated.fontSize": 19,
+  "editor.fontSize": 18,
+  "debug.console.fontSize": 18,
+  "terminal.integrated.fontSize": 18,
   "editor.cursorBlinking": "solid",
   // "editor.lineHeight": 1.25,
   "editor.lineHeight": 1.4,
@@ -115,5 +115,6 @@
   },
   "editor.linkedEditing": true,
   "workbench.activityBar.visible": false,
-  "zenMode.fullScreen": false
+  "zenMode.fullScreen": false,
+  "editor.minimap.enabled": false
 }
