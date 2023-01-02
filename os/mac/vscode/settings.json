@@ -1,14 +1,16 @@
 {
   // EDITOR STYLE
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
   "editor.fontFamily": "JetBrainsMono Nerd Font, monospace",
-  "editor.fontSize": 18,
-  "debug.console.fontSize": 18,
-  "terminal.integrated.fontSize": 18,
+  "editor.fontSize": 19,
+  "debug.console.fontSize": 19,
+  "terminal.integrated.fontSize": 19,
   "editor.cursorBlinking": "solid",
-  "editor.lineHeight": 1.25,
+  // "editor.lineHeight": 1.25,
+  "editor.lineHeight": 1.4,
+  "editor.fontLigatures": true,
   "editor.rulers": [80, 120],
   "editor.minimap.renderCharacters": false,
   "workbench.colorCustomizations": {
@@ -107,11 +109,11 @@
   "errorLens.messageBackgroundMode": "none",
   // MISC
   "cSpell.userWords": ["Heyo", "Jannatin", "jannatinnaim", "Naim"],
-  "editor.minimap.enabled": false,
   "redhat.telemetry.enabled": false,
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "editor.linkedEditing": true,
-  "workbench.activityBar.visible": false
+  "workbench.activityBar.visible": false,
+  "zenMode.fullScreen": false
 }
