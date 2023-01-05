@@ -37,6 +37,7 @@ source $DOTFILES_ZSH_MAC/config/plugins/powerlevel10k/.p10k.zsh
 # ALIASES
 source $DOTFILES_ZSH_MAC/config/aliases/shell.zsh
 source $DOTFILES_ZSH_MAC/config/aliases/exa.zsh
+source $DOTFILES_ZSH_MAC/config/aliases/nerdfetch.zsh
 
 # GOOGLE CLOUD CLI
 . "/Users/jannatinnaim/.gcloud/google-cloud-sdk/path.zsh.inc"
