@@ -1,0 +1,6 @@
+[user]
+	signingkey = 6BE5F7DB15FC4AF9
+	email = soup@jannatinnaim.com
+	name = Jannatin Naim
+[core]
+	editor = lvim

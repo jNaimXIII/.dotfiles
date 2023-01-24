@@ -1,8 +1,0 @@
-set visualbell
-set noerrorbells
-
-sethandler n:vim i:ide
-
-set scrolloff=8
-set sidescrolloff=8
-set ideajoin
