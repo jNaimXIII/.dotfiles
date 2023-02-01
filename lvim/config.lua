@@ -14,6 +14,8 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 
+lvim.builtin.nvimtree.setup.view.width = 26
+
 lvim.builtin.treesitter.rainbow.enable = true
 lvim.builtin.treesitter.autotag.enable = true
 
@@ -96,6 +98,7 @@ lvim.builtin.which_key.mappings["m"] = {
 	s = { "<cmd>lua require('mini.map').toggle_side()<cr>", "Toggle Side" },
 	t = { "<cmd>lua require('mini.map').toggle()<cr>", "Toggle" },
 }
+lvim.builtin.which_key.mappings["z"] = { "<cmd>lua require('maximize').toggle()<cr>", "Maximize" }
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
@@ -238,6 +241,7 @@ lvim.plugins = {
 
 			vim.cmd("colorscheme onedark_vivid")
 		end,
+		priority = 1000,
 	},
 	{
 		"echasnovski/mini.map",
@@ -497,9 +501,20 @@ lvim.plugins = {
 	{
 		"dhruvasagar/vim-zoom",
 	},
-	-- {
-	-- 	"kdheepak/lazygit.nvim"
-	-- },
+	{
+		"kdheepak/lazygit.nvim",
+	},
+	{
+		"declancm/maximize.nvim",
+		config = function()
+			require("maximize").setup({
+				default_keymaps = true,
+			})
+		end,
+	},
+	{
+		"lervag/vimtex",
+	},
 }
 
 lvim.autocommands = {
@@ -513,29 +528,29 @@ lvim.autocommands = {
 			end,
 		},
 	},
-	{
-		{ "BufEnter", "Filetype" },
-		{
-			desc = "open mini.map and exclude some filetypes",
-			pattern = { "*" },
-			callback = function()
-				local exclude_ft = {
-					"qf",
-					"NvimTree",
-					"toggleterm",
-					"TelescopePrompt",
-					"alpha",
-					"netrw",
-				}
+	-- {
+	-- 	{ "BufEnter", "Filetype" },
+	-- 	{
+	-- 		desc = "open mini.map and exclude some filetypes",
+	-- 		pattern = { "*" },
+	-- 		callback = function()
+	-- 			local exclude_ft = {
+	-- 				"qf",
+	-- 				"NvimTree",
+	-- 				"toggleterm",
+	-- 				"TelescopePrompt",
+	-- 				"alpha",
+	-- 				"netrw",
+	-- 			}
 
-				local map = require("mini.map")
-				if vim.tbl_contains(exclude_ft, vim.o.filetype) then
-					vim.b.minimap_disable = true
-					map.close()
-				elseif vim.o.buftype == "" then
-					map.open()
-				end
-			end,
-		},
-	},
+	-- 			local map = require("mini.map")
+	-- 			if vim.tbl_contains(exclude_ft, vim.o.filetype) then
+	-- 				vim.b.minimap_disable = true
+	-- 				map.close()
+	-- 			elseif vim.o.buftype == "" then
+	-- 				map.open()
+	-- 			end
+	-- 		end,
+	-- 	},
+	-- },
 }

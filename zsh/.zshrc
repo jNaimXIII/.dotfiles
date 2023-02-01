@@ -12,7 +12,7 @@ FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 FPATH="$HOME/.local/share/zsh/site-functions:${FPATH}"
 FPATH="$HOME/.zsh/completions:${FPATH}"
 
-source ~/.fzf.zsh
+# source ~/.fzf.zsh
 
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 antidote load
@@ -64,4 +64,4 @@ zstyle ':completion:*:warnings' format ' %F{red}-- no matches found --%f'
 setopt globdots
 
 autoload -Uz compinit && compinit
-# rm -f ~/.zcompdump; compinit
+rm -f ~/.zcompdump; compinit

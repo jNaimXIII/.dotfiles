@@ -4,3 +4,5 @@
 	name = Jannatin Naim
 [core]
 	editor = lvim
+[init]
+	defaultBranch = main
