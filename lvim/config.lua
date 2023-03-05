@@ -100,10 +100,10 @@ lvim.builtin.which_key.mappings["m"] = {
 }
 lvim.builtin.which_key.mappings["z"] = { "<cmd>lua require('maximize').toggle()<cr>", "Maximize" }
 
-lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.alpha.dashboard.section.header = {}
 lvim.builtin.alpha.dashboard.section.footer = {}
+lvim.builtin.alpha.active = false
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = true

@@ -2,6 +2,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# eval "$(starship init zsh)"
+
 KEYTIMEOUT=10
 
 source "${HOME}/.iterm2_shell_integration.zsh"
@@ -13,6 +15,7 @@ FPATH="$HOME/.local/share/zsh/site-functions:${FPATH}"
 FPATH="$HOME/.zsh/completions:${FPATH}"
 
 # source ~/.fzf.zsh
+ZVM_CURSOR_STYLE_ENABLED=false
 
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 antidote load
@@ -29,6 +32,12 @@ alias ls="exa"
 alias l="exa --long --classify --icons --all --group-directories-first --git"
 
 alias mux="tmuxinator"
+
+alias vi="lvim"
+
+alias rm="trash"
+
+alias e="lvim"
 
 export PATH=$HOME/.scripts:$PATH
 
@@ -50,6 +59,8 @@ export FLUTTER_ROOT="$(asdf where flutter)"
 export GOROOT="$(asdf where golang)/go/"
 export GOPATH="$(asdf where golang)/packages/"
 
+export JAVA_HOME=$(/usr/libexec/java_home)
+
 zstyle ':completion:*' verbose yes
 zstyle ':completion:*' menu select
 zstyle ':completion:*' squeeze-slashes true
@@ -64,4 +75,9 @@ zstyle ':completion:*:warnings' format ' %F{red}-- no matches found --%f'
 setopt globdots
 
 autoload -Uz compinit && compinit
-rm -f ~/.zcompdump; compinit
+# rm -f ~/.zcompdump; compinit
+
+function cdir {
+  mkdir $1
+  j $1
+}

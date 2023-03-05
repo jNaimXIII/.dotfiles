@@ -7,6 +7,8 @@ set scrolloff=8
 set sidescrolloff=8
 set ideajoin
 
+set ignorecase
+
 let mapleader=" "
 
 nnoremap gl :action ShowErrorDescription<CR>
