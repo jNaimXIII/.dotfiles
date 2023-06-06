@@ -1,0 +1,116 @@
+#!/bin/sh
+
+if [ "$#" -lt 1 ]; then
+  echo "provide a source directory"
+  exit 1
+fi
+
+source_dir="$1"
+
+if [ ! -d "$source_dir" ]; then
+  echo "source directory does not exist"
+  exit 1
+fi
+
+cd "$source_dir" || exit
+
+for file in *
+do
+    extension="${file##*.}"
+
+    new_name=$(shuf -i 1000000-9999999 -n 1)
+    while [ -f "${new_name}.${extension}" ]
+    do
+        new_name=$(shuf -i 1000000-9999999 -n 1)
+    done
+
+    mv "$file" "${new_name}.${extension}"
+    echo "renamed $file to ${new_name}.${extension}"
+done
+
+
+# NOTE: YAGNI for now.
+# #!/bin/sh
+
+# help_message() {
+#   echo "This script is used to rename all files in a directory with random 8-digit integers"
+#   echo "and move them to another directory if specified"
+#   echo ""
+#   echo "usage:"
+#   echo "  script.sh [--move] <source_directory> [destination_directory]"
+#   echo ""
+#   echo "options:"
+#   echo "  --move               move files to destination directory instead of copying"
+#   echo "  --help               display this help message"
+#   echo ""
+# }
+
+# if [ "$1" = "--help" ]; then
+#   help_message
+#   exit 0
+# fi
+
+# move=false
+# if [ "$1" = "--move" ]; then
+#   move=true
+#   shift
+# fi
+
+# if [ "$#" -lt 1 ]; then
+#   help_message
+#   exit 1
+# fi
+
+# source_dir="$1"
+
+# if [ ! -d "$source_dir" ]; then
+#   echo "source directory does not exist"
+#   exit 1
+# fi
+
+# if [ "$#" -lt 2 ]; then
+#   destination_dir="$source_dir"
+# else
+#   destination_dir="$2"
+#   if [ ! -d "$destination_dir" ]; then
+#     echo "destination directory does not exist"
+#     exit 1
+#   fi
+# fi
+
+# temp_dir=$(mktemp -d -t tmp.XXXXXXXXXX)
+
+# cp -r "$source_dir"/* "$temp_dir"
+
+# cd "$temp_dir" || exit
+
+# for file in *
+# do
+#     extension="${file##*.}"
+
+#     new_name=$(shuf -i 100000000-999999999 -n 1)
+#     while [ -f "${new_name}.${extension}" ]
+#     do
+#         new_name=$(shuf -i 100000000-999999999 -n 1)
+#     done
+# 
+#     # new_name=$(openssl rand -hex 4 | cut -c 1-6)
+#     # while [ -f "${destination_dir}/${new_name}.${extension}" ] || [ -f "${temp_dir}/${new_name}.${extension}" ]
+#     # do
+#     # new_name=$(openssl rand -hex 4 | cut -c 1-6)
+#     # done
+
+#     mv "$file" "${new_name}.${extension}"
+#     echo "renamed $file to ${new_name}.${extension}"
+# done
+
+# cd - || exit
+
+# if [ "$move" = true ]; then
+#     mv -v "$temp_dir"/* "$destination_dir"
+# else
+#     cp -rv "$temp_dir"/* "$destination_dir"
+# fi
+
+# rm -rf "$temp_dir"
+

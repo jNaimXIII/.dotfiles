@@ -1,0 +1,22 @@
+# Command Abbreviations
+olets/zsh-abbr kind:defer
+
+# Command Completion
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions
+
+# Command Syntax Highlighting
+zdharma-continuum/fast-syntax-highlighting kind:defer
+
+# Parent Directory Jumping
+peterhurford/up.zsh
+
+# SSH and GPG Agents
+ohmyzsh/ohmyzsh path:plugins/ssh-agent
+ohmyzsh/ohmyzsh path:plugins/gpg-agent
+
+# Vim Mode
+jeffreytse/zsh-vi-mode
+
+# P10K Prompt
+# romkatv/powerlevel10k

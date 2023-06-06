@@ -1,0 +1,15 @@
+#!/bin/sh
+
+tmp_file=$(mktemp /tmp/XXXXXXXXX)
+
+$EDITOR "$tmp_file"
+
+branch_name=$(awk '{print $1}' < tmp_file)
+
+rm "$tmp_file"
+
+git checkout -b "$branch_name"
+git add .
+git commit
+gh pr create --fill
+
