@@ -1,0 +1,55 @@
+" Clipboard
+set clipboard+=unnamed
+set clipboard+=ideaput
+
+" Leader
+let mapleader=" "
+
+" Zen Mode Toggle
+nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
+
+" Terminal Toggle
+nnoremap <c-t> :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>t :action Terminal.OpenInTerminal<CR>
+
+" Editor Split Navigation
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+
+" Tab Navigation
+nnoremap <s-H> :action PreviousTab<CR>
+nnoremap <s-L> :action NextTab<CR>
+
+" Close Hotkey
+nnoremap <leader>q :action CloseContent<CR>
+
+" Smart Line Joins
+set ideajoin
+set idearefactormode=keep
+
+" Smart Select
+vnoremap < <gv
+vnoremap > >gv
+
+" Comment
+nnoremap <leader>/ :action CommentByLineComment<CR>
+
+" Refactoring
+nnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
+
+" Smart Search
+set incsearch
+
+" Keymap Handlers
+sethandler <c-d> a:vim
+sethandler <c-r> a:vim
+
+" Smart Scroll
+set scrolloff=8
+set sidescrolloff=8
+
+" No Bells
+set visualbell
+set noerrorbells
