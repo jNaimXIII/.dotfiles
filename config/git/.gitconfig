@@ -1,0 +1,13 @@
+[user]
+	name = Jannatin Naim
+	email = soup@jannatinnaim.com
+	signkey = 2C0660121379BBC4
+	signingKey = 2C0660121379BBC4
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
+[commit]
+	gpgSign = true
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg2
