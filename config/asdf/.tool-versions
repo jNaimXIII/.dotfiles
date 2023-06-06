@@ -1,0 +1,10 @@
+neovim stable
+nodejs lts
+python 3.11.3
+java zulu-11.64.19
+yarn 1.22.19
+golang 1.20.4
+pnpm 8.5.1
+rust 1.69.0
+hugo 0.112.5
+haskell 9.6.2
