@@ -24,6 +24,7 @@ antidote load
 
 # Aliases
 alias ls="exa"
+alias ll="exa --long --icons --group-directories-first"
 alias l="exa --long --icons --all --group-directories-first"
 alias codi="code-insiders"
 
@@ -45,6 +46,7 @@ export GPG_TTY=$(tty)
 
 # Neovim
 export NVIM_APPNAME=AstroNvim
+# export NVIM_APPNAME=NvChad
 
 # Shell Scripts
 export PATH="$HOME/.scripts/:$PATH"
