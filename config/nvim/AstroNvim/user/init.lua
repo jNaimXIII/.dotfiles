@@ -57,5 +57,10 @@ return {
   },
 
   -- runs at the end of setup process
-  polish = function() end,
+  polish = function()
+    vim.api.nvim_create_autocmd("FileType", {
+      desc = "Disable comment continuation",
+      callback = function() vim.cmd "setlocal formatoptions-=c formatoptions-=r formatoptions-=o" end,
+    })
+  end,
 }
